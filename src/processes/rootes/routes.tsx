@@ -7,5 +7,5 @@ import {Menu} from 'pages/menu/ui'
 export const routes: RouteObject[] = [
   {path: paths.home, element: <Home/>},
   {path: paths.menu, element: <Menu/>},
-  {path: '*', element:  <Navigate to={paths.home}/>}
+  {path: '*', element:  <Navigate replace to={paths.home}/>}
 ]
