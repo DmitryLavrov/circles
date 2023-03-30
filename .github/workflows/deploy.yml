@@ -50,7 +50,7 @@ jobs:
       - name: Create ENV file
         run: |
           touch .env
-          echo REACT_APP_BASE_URL=${{ vars.BASE_URL }} >> .env
+          echo REACT_APP_BASE_URL=${{ env.BASE_URL }} >> .env
           cat .env
 
       - name: Build
