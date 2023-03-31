@@ -5,6 +5,6 @@ console.log('BASE_URL',BASE_URL)
 //--------------------------
 
 export const paths = {
-  home: '/',
-  menu: '/menu',
+  home: BASE_URL + '/',
+  menu: BASE_URL + '/menu',
 }
